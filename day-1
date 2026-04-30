@@ -9,4 +9,22 @@ int main(){
     fahrenheit= (celcius *9.0/5.0) +32.0;
     cout<< fahrenheit <<endl;
     return 0;
-   
+
+
+              q2.
+// global vs local variable  
+#include<iostream>
+using namespace std;
+
+//global variable 
+int globalVariable = 100;
+int main (){
+    
+    int userInput =100;
+    float result;
+     cin >> userInput;
+     result = (double )globalVariable/ userInput ;
+     
+     cout<<result<< endl;
+     return 0;
+}
