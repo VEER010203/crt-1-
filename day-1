@@ -10,8 +10,7 @@ int main(){
     cout<< fahrenheit <<endl;
     return 0;
 
-
-              q2.
+// problem2 
 // global vs local variable  
 #include<iostream>
 using namespace std;
@@ -42,4 +41,23 @@ int main(){
      bool isEqui = (side1> 0)&&(side1==side2)&&(side2==side3);
      cout<< isEqui<< endl;
      return 0;
+}
+
+
+// problem 4 
+// swap values of 2 variables 
+#include<iostream>
+using namespace std;
+
+int main (){
+    int a;
+    int b;
+    cin >>a >> b;
+    
+    int temp= a;
+    a=b;
+    b=temp;
+     cout << a << "\n"<< b << endl ;
+     return 0;
+     
 }
