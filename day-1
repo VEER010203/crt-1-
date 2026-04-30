@@ -89,3 +89,26 @@ int main (){
   }
   return 0;
 }
+
+// problem 6
+// Calculate the sum and average of 3 numbers
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    double p1; 
+    double q2;
+    double r3;
+    double sum, average;
+
+    cin >> p1 >> q2 >> r3 ;
+    sum = p1 + q2+ r3;
+    average = sum / 3.0;
+
+  
+    cout << "Sum: " << sum << endl;
+    cout << "Average: " << average << endl;
+
+    return 0;
+}
