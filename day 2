@@ -113,3 +113,31 @@ using namespace std ;
  }
 
 
+// problem 7--smart home lightning system 
+
+
+#include <iostream> 
+using namespace std ;
+
+ int main (){
+      string dayOrNight;
+      bool motionDetected ;
+      
+      cout << "Is it day or night ";
+      cin >> dayOrNight;
+      
+      cout << "Is motion is detected? (1 for yes , o for No):";
+      cin >> motionDetected;
+      
+      if (dayOrNight == "night"|| dayOrNight=="Night "){
+          if(motionDetected){
+              cout << "turn on the LED with 100% brightness";
+          }else{
+              cout << "turn on the LED light with only 10% OF brightness";
+          }
+      }else {
+          cout << "turn off the light ";
+      }
+      return 0;
+ }
+
