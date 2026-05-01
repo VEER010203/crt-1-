@@ -89,3 +89,27 @@ using namespace std ;
      return 0;
  }
 
+
+
+// problem 6 --break statement 
+// print 1-N  and avoid number which are divisible by 3
+
+#include <iostream> 
+using namespace std ;
+ int main (){
+     int n;
+     int sum= 0;
+     
+     
+     while (true){
+         cin>> n;
+         if (n < 0){
+             break;
+         }
+         sum = sum +n;
+     }
+        cout << sum ;
+        return 0;
+ }
+
+
