@@ -70,3 +70,22 @@ using namespace std ;
  }
 
 
+// problem 5 --continue statement 
+// print 1-N  and avoid number which are divisible by 3
+
+#include <iostream> 
+using namespace std ;
+ int main (){
+     int n;
+     cin >> n;
+     
+     for (int i=1;i<=n ;i++){
+         if (i%3 == 0){
+             continue ;
+         }
+         cout<< i<< " ";
+     }
+     cout << "\n";
+     return 0;
+ }
+
