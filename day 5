@@ -88,3 +88,23 @@ int main (){
     
     return 0;
 }
+
+
+
+//program6 
+//pointers 
+
+#include <iostream> 
+using namespace std;
+
+int main (){
+    int age = 24;
+    int *ptr = &age;
+    
+    cout << age << "\n";
+    cout << ptr<< "\n";
+    cout << *ptr<<"\n";
+    
+    *ptr =101;//change value using derefersing
+    cout<<*ptr;
+}
