@@ -21,3 +21,21 @@ int main(){
         cout<< "\n";
 }
 return 0;}
+
+
+                                //functions 
+//fuction declaration and initilization
+
+#include <iostream>
+using namespace std;
+
+void printMessage(){
+    
+cout << "hii we are learmimg fuctions! ";
+
+
+}
+int main (){
+    printMessage();
+    return 0;
+}
