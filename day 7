@@ -1,0 +1,160 @@
+// Access specifier
+// 7.2 -- private 
+
+#include <iostream>
+using namespace std;
+
+class BandAcoount{
+      
+      private :
+           int balance = 6000;
+           
+    public :
+        void showBalance(){
+            cout << "balance is your account is "<< balance;
+        }
+      
+};
+
+int main (){
+    BandAcoount myaccount ;
+    myaccount.showBalance();
+}
+
+
+
+
+// Access specifier 
+// 7.3 -- protected 
+
+#include <iostream>
+using namespace std;
+
+class Parent {
+    protected: 
+    int secretCode =0001;
+};
+ class child : public Parent {
+     public:
+     void accessOfSecretCode (){
+         cout << "secretCode of the locker is "<< secretCode;
+         
+     }
+ };
+ 
+ 
+int main(){
+        child obj1;
+        obj1.accessOfSecretCode();
+}
+
+
+
+
+
+
+
+//constructor 
+// types -- 2.1 -- default
+//          2.2 -- parameterized
+//         
+
+#include <iostream>
+using namespace std;
+
+class wifiConnection{
+public:
+    string networkName;
+    int password ;
+    
+    // constructor
+    
+    wifiConnection(){
+        networkName = "ACTfiber";
+        password = "979";
+    }
+    
+    public:
+    void showDetails (){
+    void << "networ name is"<< networkName<< "and its password is "<< password;
+    }  
+};
+
+int main(){
+    wifiConnection obj1 ;
+   obj1.showDetails();
+    
+
+
+
+  //constructor 
+// types -- 2.1 -- default
+//          2.2 -- parameterized
+//         
+
+#include <iostream>
+using namespace std;
+
+class Student {
+public:
+      string name;
+      int id;
+     
+     //constructor 
+     Student(string studentName , int studentID){
+         name= studentName;
+         id = studentID;
+     }
+     
+     
+void displayDetails(){
+    cout<< name <<" "<< id;
+}
+    
+};
+
+ int main (){
+     Student std1("abhi",121);
+     std1.displayDetails();
+ }
+
+                                     OOPS
+//pillar of OOPS
+// ENCAPSULATION
+// which means  binding od the data into single unit (function , data , variabe , methods)]
+// into a single unit called class and making restrictionson this class numbers 
+// data security 
+// controlled access over mt data
+// validation
+//code maintainability 
+
+#include <iostream>
+using namespace std;
+
+
+class bankAccount {
+    private :
+    int balance ;
+    
+public:
+void setBalance(int amount){
+    if(amount >=0){
+        balance = amount ;
+    }else{
+        cout<< "enter a valid number ";
+    }
+}
+
+public:    
+int getbalance(){
+    return balance;
+}
+};
+  int main(){
+      bankAccount obj1;
+      obj1.setBalance(6700);
+      cout << obj1.getbalance();
+  }
+
+
+  
