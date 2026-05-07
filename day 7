@@ -157,4 +157,7 @@ int getbalance(){
   }
 
 
-  
+  //Abstraction  means hiding the implementations and sharing only the neccesary 
+//features to the users 
+// abstract class -- class cannot be initilization and it is formed using the abstract keyword 
+// abstract method -- there is no initilazation of the abstract method 
