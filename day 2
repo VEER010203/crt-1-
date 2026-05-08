@@ -178,3 +178,107 @@ using namespace std ;
          cout << "Invalid selection , Enter a valid number.. ";
      }
  }
+
+
+// problem --2
+// polymorphism 
+//means one name but different forms
+// same function  behaves differently depending on the types of the object it calles 
+// two types 
+// compile time polymorphism -- function overloading -- static 
+// resolved at compile time 
+// function overloading -- same function but 
+// faster excution
+// run time polymorphism -- function ov3erloading -- dynamic 
+// resolved at rum time 
+
+
+// types of poymorphism --2.1
+// function overloading
+
+#include <iostream>
+using namespace std;
+
+class Math {
+public:
+    // First version: 2 integers
+    void add(int a, int b) {
+        cout << a * b << "\n";
+    }
+
+    // Second version: 3 integers
+    void add(int a, int b, int c) {
+        cout << a * b * c << "\n";
+    }
+
+    // Third version: 2 doubles
+    void add(double a, double b) {
+        cout << a * b << "\n";
+    }
+}; // The class must close AFTER all functions are defined
+
+int main() {
+    Math m;
+    
+    m.add(5, 2);      
+    m.add(8, 8, 8);    
+    m.add(8.2, 9.9);   
+
+    return 0;
+}
+
+
+
+
+problem --5
+class Animal{
+ public:
+ virtual  void sound (){                    // virtual use 
+       cout << " animal make sound ";
+   }
+};
+
+class Dog : public Animal{
+    public:
+    void sound() override {                     // override 
+        cout << "dog make a sound "<<"\n";
+    }
+};
+
+ class Cat : public Animal{
+
+    public:
+    void sound()override  {                     //override
+        cout << "cat make a sound"<< "\n";
+    }
+ };
+ 
+  int main (){
+      Dog d;
+      Cat c;
+      d.sound();
+      c.sound();
+  }
+
+
+
+// example of virtual functions 
+
+class Parent {
+    public:
+     virtual void sum (int a, int b){ ///  same func mai same parameter 
+         cout <<  a* b<< "parent";
+     }
+};
+
+ class child : public Parent{
+     public:
+     void sum ( int a , int b )override{
+         cout << a +b<< "child ";
+     }
+ };
+ 
+  int main (){
+      child c;
+      c.sum(19,11);
+  }
